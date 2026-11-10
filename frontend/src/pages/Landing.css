@@ -1,0 +1,75 @@
+.landing { background: #fff; color: #1a1a2e; }
+
+.land-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 60px; background: #fff; border-bottom: 1px solid #e8eaf0;
+  position: sticky; top: 0; z-index: 100;
+}
+.land-logo { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; }
+.land-logo-icon {
+  width: 34px; height: 34px; border-radius: 8px; background: #185FA5;
+  color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700;
+}
+.land-nav-links { display: flex; align-items: center; gap: 24px; }
+.land-nav-links a { font-size: 14px; color: #555; }
+.land-nav-links a:hover { color: #185FA5; }
+
+.land-hero {
+  background: #042C53; color: #fff;
+  padding: 80px 60px; text-align: center;
+}
+.hero-badge {
+  display: inline-block; background: #E6F1FB; color: #0C447C;
+  font-size: 12px; font-weight: 500; padding: 5px 16px; border-radius: 20px; margin-bottom: 20px;
+}
+.land-hero h1 { font-size: 44px; font-weight: 700; margin-bottom: 16px; color: #fff; line-height: 1.2; }
+.land-hero p { font-size: 17px; color: #85B7EB; line-height: 1.7; margin-bottom: 32px; }
+.hero-btns { display: flex; gap: 14px; justify-content: center; margin-bottom: 48px; }
+.hero-stats {
+  display: flex; gap: 48px; justify-content: center;
+  border-top: 1px solid rgba(255,255,255,.15); padding-top: 32px;
+}
+.hero-stats div { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.hero-stats strong { font-size: 28px; font-weight: 700; color: #fff; }
+.hero-stats span { font-size: 13px; color: #85B7EB; }
+
+.land-features, .land-pricing { padding: 80px 60px; text-align: center; }
+.land-features { background: #f9fafb; }
+.land-features h2, .land-pricing h2 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+.section-sub { color: #888; font-size: 16px; margin-bottom: 40px; }
+
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; text-align: left; }
+.feature-card { background: #fff; border: 1px solid #e8eaf0; border-radius: 12px; padding: 24px; }
+.feature-icon { font-size: 28px; margin-bottom: 12px; }
+.feature-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+.feature-card p { font-size: 13px; color: #888; line-height: 1.6; }
+
+.pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 700px; margin: 0 auto; text-align: left; }
+.pricing-card { background: #fff; border: 1.5px solid #e8eaf0; border-radius: 14px; padding: 28px; position: relative; }
+.pricing-card.popular { border: 2px solid #185FA5; }
+.popular-badge {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  background: #185FA5; color: #fff; font-size: 11px; font-weight: 600;
+  padding: 4px 16px; border-radius: 20px; white-space: nowrap;
+}
+.plan-name { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+.plan-price { font-size: 32px; font-weight: 700; margin-bottom: 6px; color: #1a1a2e; }
+.plan-price span { font-size: 14px; font-weight: 400; color: #888; }
+.plan-features { list-style: none; margin: 20px 0; display: flex; flex-direction: column; gap: 9px; }
+.plan-features li { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #444; }
+.plan-features li.disabled { color: #bbb; }
+.check { color: #1D9E75; font-weight: 700; }
+
+.land-footer {
+  background: #042C53; color: #85B7EB; padding: 32px 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.land-footer .land-logo { color: #fff; }
+.land-footer p { font-size: 13px; }
+
+@media (max-width: 768px) {
+  .land-nav, .land-hero, .land-features, .land-pricing, .land-footer { padding: 20px; }
+  .land-hero h1 { font-size: 28px; }
+  .features-grid, .pricing-grid { grid-template-columns: 1fr; }
+  .hero-stats { gap: 20px; flex-wrap: wrap; }
+}
